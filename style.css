@@ -80,8 +80,8 @@ a:hover {
 }
 
 .site-header .social-links a {
-  width: 1.25rem;    /* slightly larger for readability */
-  height: 1.25rem;
+  width: 1.75rem;    /* increased from 1.25rem for better visibility */
+  height: 1.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -95,10 +95,12 @@ a:hover {
 }
 
 .site-header .social-links svg {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;     /* increased from 1rem for better visibility */
+  height: 1.5rem;
   display: block;    /* prevents inline baseline gaps */
   fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1;
 }
 
 .site-header .social-links a:hover,
