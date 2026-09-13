@@ -1,4 +1,1 @@
-- headshot.jpg      -> photo 
-- project-1.jpg      -> image for first project
-- project-2.jpg      -> image for second project
-- project-3.jpg      -> image for third project
+mostly done with copilot because im no frontender
