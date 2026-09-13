@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract botanical portrait</title>
+  <desc id="desc">A calm green and terracotta botanical illustration.</desc>
+  <rect width="700" height="920" fill="#d8ded0"/>
+  <circle cx="360" cy="365" r="220" fill="#b3c4ad"/>
+  <path d="M0 720c130-120 230-145 350-80s220 55 350-65v345H0z" fill="#74866d"/>
+  <path d="M350 760c-20-190-9-355 35-480" fill="none" stroke="#485944" stroke-width="9"/>
+  <path d="M372 445c-100-78-155-166-145-263 102 15 169 101 145 263Z" fill="#667c62"/>
+  <path d="M380 535c112-80 175-176 168-281-112 23-177 123-168 281Z" fill="#8fa88a"/>
+  <path d="M354 615c-93-58-137-126-137-203 88 9 142 83 137 203Z" fill="#536b54"/>
+  <circle cx="535" cy="145" r="70" fill="#cc7657" opacity=".85"/>
+  <circle cx="120" cy="260" r="48" fill="#e4b08c" opacity=".8"/>
+  <path d="M0 0h700v920H0z" fill="none" stroke="#f5f4ef" stroke-width="18" opacity=".55"/>
+</svg>
