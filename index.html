@@ -1,103 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vitória Teresa</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vitória Teresa — biology, research, and interdisciplinary projects.">
+  <title>Vitória Teresa — Biology &amp; making</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <a href="#home" class="wordmark" data-tab-link="home">Vitória Teresa<span class="wordmark-dot">.</span></a>
+    <nav class="tab-nav" aria-label="Main navigation">
+      <a href="#home" data-tab-link="home">Home</a>
+      <a href="#about" data-tab-link="about">About</a>
+      <a href="#projects" data-tab-link="projects">Projects</a>
+      <a href="#notes" data-tab-link="notes">Notes</a>
+      <a href="#contact" data-tab-link="contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+  </header>
 
-<header class="site-header">
-  <a href="#top" class="wordmark">Vitória Teresa</a>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-  </nav>
-</header>
-
-<main id="top">
-
-  <section class="hero">
-    <div class="hero-text">
-      <p class="hero-kicker">Biology student &amp; interdisciplinary maker</p>
-      <h1>Desc,<br>Desc.</h1>
-      <p class="hero-sub">
-        Notes, research, and projects from a biology degree 
-      </p>
-    </div>
-    <div class="hero-image">
-      <img src="images/headshot.jpg" alt="Portrait of Teresa">
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About</h2>
-    <div class="about-body">
-      <p>
-        work
-      </p>
-      <p>
-        work
-      </p>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-
-    <article class="project">
-      <div class="project-image">
-        <img src="images/project-1.jpg" alt="">
+  <main>
+    <section class="page active" id="home" data-page="home" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Biology student <span aria-hidden="true">/</span> interdisciplinary maker</p>
+          <h1 id="home-title">Curious about<br><em>living systems.</em></h1>
+          <p class="hero-intro">A growing archive of research, visual experiments, and small tools for understanding the world around us.</p>
+          <a class="text-link" href="#projects" data-tab-link="projects">Explore the work <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-portrait">
+          <img src="images/headshot.jpg" alt="Portrait of Vitória Teresa">
+          <span class="portrait-caption">Porto Alegre, BR<br>29°59′ S / 51°13′ W</span>
+        </div>
       </div>
-      <div class="project-text">
-        <h3>Project title</h3>
-        <p class="project-meta">Type of project — Year</p>
-        <p>
-          desc
-        </p>
-        <a href="#" class="project-link">View project &#8594;</a>
+      <div class="home-grid">
+        <div class="home-feature">
+          <p class="eyebrow">Currently exploring</p>
+          <h2>How science becomes a story people can enter.</h2>
+          <p>From mapping local startups to making dense ideas feel tactile, I work at the intersection of biology, technology, and communication.</p>
+        </div>
+        <div class="home-index">
+          <p class="eyebrow">On this site</p>
+          <a href="#about" data-tab-link="about"><span>01</span> A little about me <b>↗</b></a>
+          <a href="#projects" data-tab-link="projects"><span>02</span> Selected projects <b>↗</b></a>
+          <a href="#notes" data-tab-link="notes"><span>03</span> Notes from the field <b>↗</b></a>
+        </div>
       </div>
-    </article>
+    </section>
 
-    <article class="project">
-      <div class="project-image">
-        <img src="images/project-2.jpg" alt="">
+    <section class="page" id="about" data-page="about" aria-labelledby="about-title" hidden>
+      <div class="page-heading">
+        <p class="eyebrow">01 / About</p>
+        <h1 id="about-title">A biologist in<br><em>progress.</em></h1>
       </div>
-      <div class="project-text">
-        <h3>Project title</h3>
-        <p class="project-meta">Type of project — Year</p>
-        <p>
-          desc
-        </p>
-        <a href="#" class="project-link">View project &#8594;</a>
+      <div class="about-layout">
+        <div>
+          <p class="large-copy">I’m Vitória, a biology student interested in the places where living systems meet human systems.</p>
+          <p>I like asking questions that need more than one discipline to answer. My practice moves between research, writing, data visualization, and making things for the web.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Brazil</dd></div>
+          <div><dt>Studying</dt><dd>Biological sciences</dd></div>
+          <div><dt>Interested in</dt><dd>Ecology · biotech · science communication</dd></div>
+          <div><dt>Languages</dt><dd>Português · English</dd></div>
+        </dl>
       </div>
-    </article>
-
-    <article class="project">
-      <div class="project-image">
-        <img src="images/project-3.jpg" alt="">
+      <div class="timeline">
+        <p class="eyebrow">A short timeline</p>
+        <div class="timeline-row"><span>Now</span><p>Building a living archive of projects and questions.</p></div>
+        <div class="timeline-row"><span>Recent</span><p>Exploring Brazil’s bioeconomy and the people shaping it.</p></div>
+        <div class="timeline-row"><span>Always</span><p>Collecting field notes, books, images, and better questions.</p></div>
       </div>
-      <div class="project-text">
-        <h3>Project title</h3>
-        <p class="project-meta">Type of project — Year</p>
-        <p>
-          desc
-        </p>
-        <a href="#" class="project-link">View project &#8594;</a>
+    </section>
+
+    <section class="page" id="projects" data-page="projects" aria-labelledby="projects-title" hidden>
+      <div class="page-heading projects-heading">
+        <div><p class="eyebrow">02 / Selected work</p><h1 id="projects-title">Things I’ve<br><em>been making.</em></h1></div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="research">Research</button>
+          <button class="filter" type="button" data-filter="web">Web</button>
+        </div>
       </div>
-    </article>
+      <div class="project-list">
+        <article class="project-card" data-category="research">
+          <div class="project-number">01</div><div class="project-art art-map"><span>map</span><i>✦</i></div>
+          <div class="project-info"><p class="eyebrow">Research · 2024</p><h2>Brazil’s bio-startup map</h2><p>A visual index of companies working with biology, health, and the environment across Brazil.</p><button class="text-link project-open" type="button" data-project="map">Read the project <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="web">
+          <div class="project-number">02</div><div class="project-art art-specimen"><span>field<br>notes</span><i>◌</i></div>
+          <div class="project-info"><p class="eyebrow">Web experiment · 2024</p><h2>A field guide to noticing</h2><p>A quiet digital notebook for collecting observations, textures, and questions from everyday walks.</p><button class="text-link project-open" type="button" data-project="field-guide">Read the project <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="research">
+          <div class="project-number">03</div><div class="project-art art-cells"><span>cell /<br>city</span><i>+</i></div>
+          <div class="project-info"><p class="eyebrow">Study · ongoing</p><h2>Cells, cities, and networks</h2><p>Notes on the patterns shared by biological systems and the infrastructures we build around them.</p><button class="text-link project-open" type="button" data-project="cells">Read the project <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
 
-  </section>
+    <section class="page" id="notes" data-page="notes" aria-labelledby="notes-title" hidden>
+      <div class="page-heading"><p class="eyebrow">03 / Notes</p><h1 id="notes-title">Small observations,<br><em>still becoming.</em></h1></div>
+      <div class="notes-grid">
+        <article><p class="note-date">01.08.24 · Reading</p><h2>Learning to look at a map as a living thing</h2><p>Maps are never just containers for information. They decide what becomes visible, and what stays at the edges.</p><a href="#" class="text-link">Keep reading ↗</a></article>
+        <article><p class="note-date">18.07.24 · Field note</p><h2>Three ways a walk can become research</h2><p>Carry a question. Change your pace. Write down what surprises you before it becomes familiar.</p><a href="#" class="text-link">Keep reading ↗</a></article>
+        <article><p class="note-date">02.06.24 · Studio</p><h2>On making a website feel like a notebook</h2><p>A digital space can be structured without feeling finished. The gaps are part of the invitation.</p><a href="#" class="text-link">Keep reading ↗</a></article>
+      </div>
+    </section>
 
-  <footer class="site-footer">
-    <p>Get in touch: <a href="mailto:vv.ss.teresa@gmail.com">vv.ss.teresa@gmail.com</a></p>
-  </footer>
+    <section class="page" id="contact" data-page="contact" aria-labelledby="contact-title" hidden>
+      <div class="contact-page"><p class="eyebrow">04 / Contact</p><h1 id="contact-title">Let’s follow<br><em>a question.</em></h1><p class="large-copy">Have a project, a paper, or a curious thread to share?</p><a class="email-link" href="mailto:vv.ss.teresa@gmail.com">vv.ss.teresa@gmail.com <span>↗</span></a><div class="contact-links"><a href="https://github.com/vitoriaconrado" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home" data-tab-link="home">Back to the beginning ↑</a></div></div>
+    </section>
+  </main>
 
-</main>
+  <footer class="site-footer"><span>© 2024 Vitória Teresa</span><span>Made with curiosity <span aria-hidden="true">✦</span></span></footer>
 
+  <dialog class="project-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+    <p class="eyebrow" id="dialog-kicker">Research · 2024</p><h2 id="dialog-title">Brazil’s bio-startup map</h2><p id="dialog-copy">A visual index of companies working with biology, health, and the environment across Brazil.</p><a id="dialog-link" class="text-link" href="projects/startups_map.html" target="_blank" rel="noreferrer">Open interactive map ↗</a>
+  </dialog>
+  <script src="script.js"></script>
 </body>
 </html>
