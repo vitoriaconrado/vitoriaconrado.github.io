@@ -96,17 +96,16 @@ p { margin-top: 0; }
 .project-info .eyebrow { margin-bottom: 10px; }
 .project-info h2 { margin-bottom: 12px; }
 .project-info p:not(.eyebrow) { margin-bottom: 18px; color: var(--ink-soft); }
-.notes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-.notes-grid article { min-height: 290px; padding: 20px 0; border-top: 1px solid var(--rule); }
-.notes-grid h2 { margin-bottom: 20px; font-size: 1.7rem; }
-.notes-grid article > p:not(.note-date) { color: var(--ink-soft); }
 .contact-page { min-height: 590px; display: flex; flex-direction: column; justify-content: center; }
 .contact-page h1 { margin-bottom: 30px; }
 .email-link { width: fit-content; color: var(--sage-deep); border-bottom: 1px solid currentColor; font: 1.3rem var(--serif); text-decoration: none; }
 .email-link span { color: var(--orange); font: .9rem var(--sans); }
 .contact-links { display: flex; gap: 30px; margin-top: 100px; color: var(--ink-soft); font-size: .78rem; }
 .contact-links a { text-decoration: none; }
-.site-footer { display: flex; justify-content: space-between; max-width: 1120px; margin: 0 auto; padding: 20px 40px 35px; color: var(--ink-soft); font: .65rem var(--mono); text-transform: uppercase; }
+.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 25px; max-width: 1120px; margin: 0 auto; padding: 20px 40px 35px; color: var(--ink-soft); font: .65rem var(--mono); text-transform: uppercase; }
+.social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
+.social-links a { color: var(--ink-soft); text-decoration: none; }
+.social-links a:hover { color: var(--orange); }
 .project-dialog { width: min(520px, calc(100% - 40px)); padding: 45px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); box-shadow: 0 25px 80px #22261f25; }
 .project-dialog::backdrop { background: #22261f55; backdrop-filter: blur(3px); }
 .project-dialog h2 { margin-bottom: 15px; font-size: 2.4rem; }
@@ -133,7 +132,7 @@ p { margin-top: 0; }
   .project-card { grid-template-columns: 28px 1fr; gap: 12px; }
   .project-art, .project-info { grid-column: 2; }
   .project-art { min-height: 170px; }
-  .notes-grid { grid-template-columns: 1fr; gap: 0; }
   .contact-links { margin-top: 70px; }
-  .site-footer { padding: 20px 22px 28px; }
+  .site-footer { flex-wrap: wrap; padding: 20px 22px 28px; }
+  .site-footer .social-links { order: 3; width: 100%; justify-content: flex-start; }
 }
