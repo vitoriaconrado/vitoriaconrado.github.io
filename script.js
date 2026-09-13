@@ -73,7 +73,8 @@ document.querySelectorAll(".filter").forEach((filter) => {
     document.querySelector(".filter.active").classList.remove("active");
     filter.classList.add("active");
     document.querySelectorAll(".project-card").forEach((card) => {
-      card.hidden = filter.dataset.filter !== "all" && card.dataset.category !== filter.dataset.filter;
+      const categories = card.dataset.category.split(/\s+/);
+      card.hidden = filter.dataset.filter !== "all" && !categories.includes(filter.dataset.filter);
     });
   });
 });
