@@ -44,7 +44,8 @@ document.querySelectorAll(".filter").forEach((filter) => {
 const projectDetails = {
   map: ["Research · 2024", "Brazil’s bio-startup map", "An evolving visual index of companies working with biology, health, and the environment across Brazil.", "projects/startups_map.html", "Open interactive map ↗"],
   "field-guide": ["Web experiment · 2024", "A field guide to noticing", "A quiet digital notebook for collecting observations, textures, and questions from everyday walks.", "#", "Project notes coming soon ↗"],
-  cells: ["Study · ongoing", "Cells, cities, and networks", "Notes on the patterns shared by biological systems and the infrastructures we build around them.", "#", "Project notes coming soon ↗"],
+  cells: ["Writings · ongoing", "Notes on biology and risk", "Short essays and working notes on public health, biosecurity, technology, and AI.", "#", "Writing archive coming soon ↗"],
+  web: ["Web · ongoing", "A field guide to noticing", "A quiet digital notebook for collecting observations, textures, and questions from everyday walks.", "#", "Project notes coming soon ↗"],
 };
 
 document.querySelectorAll(".project-open").forEach((button) => {

@@ -16,6 +16,7 @@
     <nav class="tab-nav" aria-label="Main navigation">
       <a href="#home" data-tab-link="home">Home</a>
       <a href="#about" data-tab-link="about">About</a>
+      <a href="#research" data-tab-link="research">Research</a>
       <a href="#projects" data-tab-link="projects">Projects</a>
       <a href="#notes" data-tab-link="notes">Notes</a>
       <a href="#contact" data-tab-link="contact">Contact</a>
@@ -46,8 +47,9 @@
         <div class="home-index">
           <p class="eyebrow">On this site</p>
           <a href="#about" data-tab-link="about"><span>01</span> A little about me <b>↗</b></a>
-          <a href="#projects" data-tab-link="projects"><span>02</span> Selected projects <b>↗</b></a>
-          <a href="#notes" data-tab-link="notes"><span>03</span> Notes from the field <b>↗</b></a>
+          <a href="#research" data-tab-link="research"><span>02</span> Research &amp; writing <b>↗</b></a>
+          <a href="#projects" data-tab-link="projects"><span>03</span> Technical projects <b>↗</b></a>
+          <a href="#notes" data-tab-link="notes"><span>04</span> Notes from the field <b>↗</b></a>
         </div>
       </div>
     </section>
@@ -75,35 +77,75 @@
         <div class="timeline-row"><span>Recent</span><p>Exploring Brazil’s bioeconomy and the people shaping it.</p></div>
         <div class="timeline-row"><span>Always</span><p>Collecting field notes, books, images, and better questions.</p></div>
       </div>
+      <div class="cv-sections">
+        <div class="cv-section">
+          <div><p class="eyebrow">Academic education</p><p class="section-hint">Degrees, institutions, and formal academic training.</p></div>
+          <div class="cv-entries">
+            <div class="cv-entry"><span>2025 — now</span><div><h2>Biological sciences</h2><p>Universidade Federal de Santa Catarina (UFSC)</p></div></div>
+          </div>
+        </div>
+        <div class="cv-section">
+          <div><p class="eyebrow">Complementary learning</p><p class="section-hint">Courses, workshops, certificates, and independent study.</p></div>
+          <div class="cv-entries"><div class="cv-entry empty-entry"><span>+</span><div><h2>Add a course or workshop</h2><p>This space is ready for short-form learning and certifications.</p></div></div></div>
+        </div>
+        <div class="cv-section">
+          <div><p class="eyebrow">Work experience</p><p class="section-hint">Research roles, internships, volunteering, and collaborative work.</p></div>
+          <div class="cv-entries">
+            <div class="cv-entry"><span>2026 — now</span><div><h2>Data analysis intern</h2><p>Analysis, research support, and building useful ways to communicate data.</p></div></div>
+            <div class="cv-entry"><span>2025 — now</span><div><h2>AltProtein Project · UFSC</h2><p>Volunteer research and science communication connected to GFI Brasil.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="research" data-page="research" aria-labelledby="research-title" hidden>
+      <div class="page-heading"><p class="eyebrow">02 / Research</p><h1 id="research-title">Questions worth<br><em>staying with.</em></h1></div>
+      <div class="research-group">
+        <div class="group-label"><p class="eyebrow">Current research</p><p>Work in progress, open questions, and ongoing investigations.</p></div>
+        <div class="research-items">
+          <article class="research-item"><p class="research-status">Ongoing · 2026</p><h2>Brazil’s cultivated-meat regulatory scene</h2><p>Investigating how regulation, public health, and emerging biotechnology meet in Brazil’s cultivated-meat landscape.</p><a href="#contact" data-tab-link="contact" class="text-link">Get in touch about this work <span>↗</span></a></article>
+          <article class="research-item"><p class="research-status">Ongoing · 2026</p><h2>Alt-protein ecosystems in Brazil</h2><p>Mapping the startups, research groups, and infrastructures shaping the country’s alternative-protein field.</p><a href="#projects" data-tab-link="projects" class="text-link">See related technical work <span>↗</span></a></article>
+        </div>
+      </div>
+      <div class="research-group">
+        <div class="group-label"><p class="eyebrow">Publications and presentations</p><p>Articles, abstracts, talks, posters, and other public outputs.</p></div>
+        <div class="research-items"><div class="research-item empty-research"><span>+</span><div><h2>Add a publication or presentation</h2><p>Your research outputs can live here as they take shape.</p></div></div></div>
+      </div>
     </section>
 
     <section class="page" id="projects" data-page="projects" aria-labelledby="projects-title" hidden>
       <div class="page-heading projects-heading">
-        <div><p class="eyebrow">02 / Selected work</p><h1 id="projects-title">Things I’ve<br><em>been making.</em></h1></div>
+        <div><p class="eyebrow">03 / Technical projects</p><h1 id="projects-title">Things I’ve<br><em>been making.</em></h1></div>
         <div class="filters" role="group" aria-label="Filter projects">
           <button class="filter active" type="button" data-filter="all">All</button>
-          <button class="filter" type="button" data-filter="research">Research</button>
+          <button class="filter" type="button" data-filter="data-analysis">Data analysis</button>
+          <button class="filter" type="button" data-filter="data-repository">Data repository</button>
           <button class="filter" type="button" data-filter="web">Web</button>
+          <button class="filter" type="button" data-filter="writings">Writings</button>
         </div>
       </div>
       <div class="project-list">
-        <article class="project-card" data-category="research">
+        <article class="project-card" data-category="data-analysis">
           <div class="project-number">01</div><div class="project-art art-map"><span>map</span><i>✦</i></div>
           <div class="project-info"><p class="eyebrow">Data analysis · 2026</p><h2>Prototype map of alternative protein startups in Brazil </h2><p>A project aimed at mapping, organizing, and visualizing the geographic distribution of Brazilian startups operating in the plant-based food, fermentation, and cultivated meat sectors. The initiative employs Python, along with geoprocessing and visualization tools. Still growing!</p><button class="text-link project-open" type="button" data-project="map">Read the project <span>↗</span></button></div>
         </article>
-        <article class="project-card" data-category="web">
+        <article class="project-card" data-category="data-repository">
           <div class="project-number">02</div><div class="project-art art-specimen"><span>field<br>notes</span><i>◌</i></div>
           <div class="project-info"><p class="eyebrow">Data repository · 2026</p><h2> Reproducible materials for the study of cultivated meat regulation (Brazil)</h2><p>Open repository containing reproducible materials for the systematic mapping  of scientific literature and official documents regarding the regulation of cultivated meat in Brazil. Includes: screening records, R analysis, and PRISMA methodology documentation.</p><button class="text-link project-open" type="button" data-project="field-guide">Read the project <span>↗</span></button></div>
         </article>
-        <article class="project-card" data-category="research">
+        <article class="project-card" data-category="writings">
           <div class="project-number">03</div><div class="project-art art-cells"><span>cell /<br>city</span><i>+</i></div>
-          <div class="project-info"><p class="eyebrow">x</p><h2>x</h2><p>x</p><button class="text-link project-open" type="button" data-project="cells">Read the project <span>↗</span></button></div>
+          <div class="project-info"><p class="eyebrow">Writings · ongoing</p><h2>Notes on biology and risk</h2><p>Short essays and working notes on public health, biosecurity, technology, and AI.</p><button class="text-link project-open" type="button" data-project="cells">Read the project <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="web">
+          <div class="project-number">04</div><div class="project-art art-specimen"><span>field<br>notes</span><i>◌</i></div>
+          <div class="project-info"><p class="eyebrow">Web · ongoing</p><h2>A field guide to noticing</h2><p>A quiet digital notebook for collecting observations, textures, and questions from everyday walks.</p><button class="text-link project-open" type="button" data-project="web">Read the project <span>↗</span></button></div>
         </article>
       </div>
     </section>
 
     <section class="page" id="notes" data-page="notes" aria-labelledby="notes-title" hidden>
-      <div class="page-heading"><p class="eyebrow">03 / Notes</p><h1 id="notes-title">Small observations,<br><em>still becoming.</em></h1></div>
+      <div class="page-heading"><p class="eyebrow">04 / Notes</p><h1 id="notes-title">Small observations,<br><em>still becoming.</em></h1></div>
       <div class="notes-grid">
         <article><p class="note-date">01.08.24 · Reading</p><h2>Learning to look at a map as a living thing</h2><p>Maps are never just containers for information. They decide what becomes visible, and what stays at the edges.</p><a href="#" class="text-link">Keep reading ↗</a></article>
         <article><p class="note-date">18.07.24 · Field note</p><h2>Three ways a walk can become research</h2><p>Carry a question. Change your pace. Write down what surprises you before it becomes familiar.</p><a href="#" class="text-link">Keep reading ↗</a></article>
