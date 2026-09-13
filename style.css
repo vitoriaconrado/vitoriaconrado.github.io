@@ -83,6 +83,8 @@ p { margin-top: 0; }
 .project-card:last-child { border-bottom: 1px solid var(--rule); }
 .project-number { color: var(--accent); font: .68rem var(--mono); }
 .project-art { position: relative; display: flex; align-items: center; justify-content: center; min-height: 190px; overflow: hidden; color: var(--ink); font: 500 1rem var(--mono); text-transform: uppercase; }
+.project-art::after { content: "image slot"; position: absolute; right: 10px; bottom: 8px; color: var(--sage-deep); font: .55rem var(--mono); letter-spacing: .05em; opacity: .7; text-transform: uppercase; }
+.project-art.has-image::after { display: none; }
 .project-art i { position: absolute; font: 4rem var(--serif); opacity: .7; }
 .project-art span { z-index: 1; text-align: center; }
 .art-map { background: #d2dacf; background-image: linear-gradient(45deg, transparent 45%, #abbab0 46%, transparent 48%), linear-gradient(-30deg, transparent 42%, #abbab0 43%, transparent 45%); }
