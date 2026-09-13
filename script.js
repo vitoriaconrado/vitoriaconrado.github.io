@@ -3,6 +3,35 @@ const tabLinks = [...document.querySelectorAll("[data-tab-link]")];
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".tab-nav");
 const dialog = document.querySelector(".project-dialog");
+const statusTitle = document.querySelector("#current-status-title");
+const statusDescription = document.querySelector("#current-status-description");
+const statusControls = [...document.querySelectorAll(".status-control")];
+const currentUpdates = [
+  ["Mapping Brazil's alternative-protein startups", "Cleaning the dataset, checking sources, and turning the map into a more useful research tool."],
+  ["Taking the first steps in a new research question", "Reading, collecting references, and looking for the shape of a question worth staying with."],
+  ["Building the research archive", "Organizing notes, code, and public outputs so the work is easier to follow as it grows."],
+];
+
+let currentStatusIndex = 0;
+let statusTimer;
+
+function showStatus(index) {
+  currentStatusIndex = index;
+  statusTitle.classList.add("status-changing");
+  statusDescription.classList.add("status-changing");
+  window.setTimeout(() => {
+    statusTitle.textContent = currentUpdates[index][0];
+    statusDescription.textContent = currentUpdates[index][1];
+    statusTitle.classList.remove("status-changing");
+    statusDescription.classList.remove("status-changing");
+  }, 180);
+  statusControls.forEach((control) => control.classList.toggle("active", Number(control.dataset.statusIndex) === index));
+}
+
+function startStatusRotation() {
+  window.clearInterval(statusTimer);
+  statusTimer = window.setInterval(() => showStatus((currentStatusIndex + 1) % currentUpdates.length), 6000);
+}
 
 function showPage(name) {
   const pageName = pages.some((page) => page.dataset.page === name) ? name : "home";
@@ -30,6 +59,14 @@ menuToggle.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
 });
+
+statusControls.forEach((control) => {
+  control.addEventListener("click", () => {
+    showStatus(Number(control.dataset.statusIndex));
+    startStatusRotation();
+  });
+});
+startStatusRotation();
 
 document.querySelectorAll(".filter").forEach((filter) => {
   filter.addEventListener("click", () => {

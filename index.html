@@ -40,8 +40,16 @@
       <div class="home-grid">
         <div class="home-feature">
           <p class="eyebrow">Currently exploring</p>
-          <h2>title</h2>
-          <p>desc</p>
+          <div class="status-display" aria-live="polite">
+            <h2 id="current-status-title">Mapping Brazil's alternative-protein startups</h2>
+            <p id="current-status-description">Cleaning the dataset, checking sources, and turning the map into a more useful research tool.</p>
+          </div>
+          <div class="status-controls" aria-label="Currently exploring updates">
+            <button class="status-control active" type="button" data-status-index="0" aria-label="Show update 1"></button>
+            <button class="status-control" type="button" data-status-index="1" aria-label="Show update 2"></button>
+            <button class="status-control" type="button" data-status-index="2" aria-label="Show update 3"></button>
+            <span class="status-hint">Updates every few seconds</span>
+          </div>
         </div>
         <div class="home-index">
           <p class="eyebrow">On this site</p>
