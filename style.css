@@ -60,8 +60,27 @@ p { margin-top: 0; }
 .timeline-row { display: grid; grid-template-columns: 100px 1fr; border-top: 1px solid var(--rule); padding: 15px 0; }
 .timeline-row span { color: var(--orange); font: .7rem var(--mono); text-transform: uppercase; }
 .timeline-row p { margin: 0; }
+.cv-sections { margin-top: 105px; border-top: 1px solid var(--rule); }
+.cv-section { display: grid; grid-template-columns: 260px 1fr; gap: 80px; padding: 30px 0; border-bottom: 1px solid var(--rule); }
+.section-hint, .group-label > p:last-child { max-width: 210px; color: var(--ink-soft); font-size: .8rem; }
+.cv-entries { border-top: 1px solid var(--rule); }
+.cv-entry { display: grid; grid-template-columns: 115px 1fr; gap: 20px; padding: 17px 0; border-bottom: 1px solid var(--rule); }
+.cv-entry:last-child { border-bottom: 0; }
+.cv-entry > span, .research-status, .empty-research > span { color: var(--orange); font: .65rem var(--mono); text-transform: uppercase; }
+.cv-entry h2 { margin: 0 0 3px; font-size: 1.25rem; }
+.cv-entry p { margin: 0; color: var(--ink-soft); font-size: .82rem; }
+.empty-entry h2, .empty-research h2 { color: var(--ink-soft); font-style: italic; }
+.research-group { display: grid; grid-template-columns: 260px 1fr; gap: 80px; padding: 30px 0 55px; border-top: 1px solid var(--rule); }
+.research-items { border-top: 1px solid var(--rule); }
+.research-item { padding: 25px 0; border-bottom: 1px solid var(--rule); }
+.research-item h2 { margin: 0 0 12px; font-size: 1.8rem; }
+.research-item > p:not(.research-status) { max-width: 560px; color: var(--ink-soft); }
+.research-item .text-link { margin-top: 5px; }
+.empty-research { display: grid; grid-template-columns: 35px 1fr; gap: 15px; }
+.empty-research h2 { margin-bottom: 5px; font-size: 1.4rem; }
+.empty-research p { margin: 0; color: var(--ink-soft); font-size: .85rem; }
 .projects-heading { display: flex; align-items: end; justify-content: space-between; }
-.filters { display: flex; gap: 20px; }
+.filters { display: flex; flex-wrap: wrap; justify-content: end; gap: 10px 18px; max-width: 390px; }
 .filter { padding: 0 0 4px; border: 0; border-bottom: 1px solid transparent; background: none; color: var(--ink-soft); font-size: .75rem; cursor: pointer; }
 .filter.active, .filter:hover { border-color: var(--orange); color: var(--ink); }
 .project-card { display: grid; grid-template-columns: 45px 270px 1fr; gap: 28px; padding: 25px 0; border-top: 1px solid var(--rule); }
@@ -106,6 +125,9 @@ p { margin-top: 0; }
   .portrait-caption { right: -25px; }
   h1 { font-size: clamp(3.4rem, 17vw, 5.5rem); }
   .home-grid, .about-layout { grid-template-columns: 1fr; gap: 55px; padding-top: 60px; }
+  .cv-section, .research-group { grid-template-columns: 1fr; gap: 20px; }
+  .cv-sections { margin-top: 70px; }
+  .section-hint, .group-label > p:last-child { max-width: 330px; }
   .page-heading { margin-bottom: 55px; }
   .projects-heading { display: block; }
   .filters { margin-top: 35px; }
