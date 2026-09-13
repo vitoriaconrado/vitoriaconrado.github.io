@@ -78,6 +78,15 @@ p { margin-top: 0; }
 .cv-entry h2 { margin: 0 0 3px; font-size: 1.25rem; }
 .cv-entry p { margin: 0; color: var(--ink-soft); font-size: .82rem; }
 .empty-entry h2, .empty-research h2 { color: var(--ink-soft); }
+.language-list { border-top: 1px solid var(--rule); }
+.language-entry { padding: 18px 0 20px; border-bottom: 1px solid var(--rule); }
+.language-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.language-heading h2 { margin: 0; font-size: 1.25rem; }
+.language-heading span { color: var(--sage-deep); font: .65rem var(--mono); text-transform: uppercase; }
+.language-skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 18px; margin: 14px 0 0; }
+.language-skills div { display: flex; flex-direction: column; gap: 2px; }
+.language-skills dt { color: var(--ink-soft); font: .6rem var(--mono); text-transform: uppercase; }
+.language-skills dd { margin: 0; font-size: .78rem; }
 .research-group { display: grid; grid-template-columns: 260px 1fr; gap: 80px; padding: 30px 0 55px; border-top: 1px solid var(--rule); }
 .research-items { border-top: 1px solid var(--rule); }
 .research-item { padding: 25px 0; border-bottom: 1px solid var(--rule); }
@@ -152,6 +161,7 @@ p { margin-top: 0; }
   .hero h1 { font-size: 2.4rem; }
   .home-grid, .about-layout { grid-template-columns: 1fr; gap: 55px; padding-top: 60px; }
   .cv-section, .research-group { grid-template-columns: 1fr; gap: 20px; }
+  .language-skills { gap: 10px; }
   .cv-sections { margin-top: 70px; }
   .section-hint, .group-label > p:last-child { max-width: 330px; }
   .page-heading { margin-bottom: 55px; }
