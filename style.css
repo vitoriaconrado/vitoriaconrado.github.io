@@ -84,8 +84,8 @@ p { margin-top: 0; }
 .research-item h2 { margin: 0 0 12px; font-size: 1.8rem; }
 .research-item > p:not(.research-status) { max-width: 560px; color: var(--ink-soft); }
 .research-item .text-link { margin-top: 5px; }
-.research-image-slot { margin: 25px 0 0; }
-.research-image-slot img { display: block; width: 100%; aspect-ratio: 16 / 7; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); }
+.research-image-slot { width: 100%; margin: 25px 0 0; }
+.research-image-slot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); }
 .research-image-slot figcaption { margin-top: 8px; color: var(--ink-soft); font: .62rem var(--mono); }
 .research-image-slot code { color: var(--sage-deep); }
 .empty-research { display: grid; grid-template-columns: 35px 1fr; gap: 15px; }

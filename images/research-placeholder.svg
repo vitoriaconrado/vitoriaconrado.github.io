@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 525">
-  <rect width="1200" height="525" fill="#e9e8df"/>
-  <path d="M80 410h1040M80 345h760M80 280h930M80 215h620" stroke="#aebbaa" stroke-width="3"/>
-  <circle cx="975" cy="190" r="105" fill="none" stroke="#5f7b5a" stroke-width="5"/>
-  <path d="M975 110v160M895 190h160" stroke="#5f7b5a" stroke-width="3"/>
-  <text x="80" y="105" fill="#485944" font-family="monospace" font-size="30">PUBLICATION / PRESENTATION</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#e9e8df"/>
+  <path d="M65 650h470M65 585h350M65 520h415M65 455h275" stroke="#aebbaa" stroke-width="3"/>
+  <circle cx="430" cy="330" r="92" fill="none" stroke="#5f7b5a" stroke-width="5"/>
+  <path d="M430 260v140M360 330h140" stroke="#5f7b5a" stroke-width="3"/>
+  <text x="65" y="115" fill="#485944" font-family="monospace" font-size="28">IN CONSTRUCTION</text>
 </svg>
