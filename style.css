@@ -80,6 +80,10 @@ p { margin-top: 0; }
 .research-item h2 { margin: 0 0 12px; font-size: 1.8rem; }
 .research-item > p:not(.research-status) { max-width: 560px; color: var(--ink-soft); }
 .research-item .text-link { margin-top: 5px; }
+.research-image-slot { margin: 25px 0 0; }
+.research-image-slot img { display: block; width: 100%; aspect-ratio: 16 / 7; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); }
+.research-image-slot figcaption { margin-top: 8px; color: var(--ink-soft); font: .62rem var(--mono); }
+.research-image-slot code { color: var(--sage-deep); }
 .empty-research { display: grid; grid-template-columns: 35px 1fr; gap: 15px; }
 .empty-research h2 { margin-bottom: 5px; font-size: 1.4rem; }
 .empty-research p { margin: 0; color: var(--ink-soft); font-size: .85rem; }
@@ -91,6 +95,8 @@ p { margin-top: 0; }
 .project-card:last-child { border-bottom: 1px solid var(--rule); }
 .project-number { color: var(--accent); font: .68rem var(--mono); }
 .project-art { position: relative; display: flex; align-items: center; justify-content: center; min-height: 190px; overflow: hidden; color: var(--ink); font: 500 1rem var(--mono); text-transform: uppercase; }
+.project-art img { display: block; width: 100%; height: 100%; min-height: 190px; object-fit: cover; }
+.project-card[hidden] { display: none; }
 .project-art::after { content: "image slot"; position: absolute; right: 10px; bottom: 8px; color: var(--sage-deep); font: .55rem var(--mono); letter-spacing: .05em; opacity: .7; text-transform: uppercase; }
 .project-art.has-image::after { display: none; }
 .project-art i { position: absolute; font: 4rem var(--serif); opacity: .7; }
