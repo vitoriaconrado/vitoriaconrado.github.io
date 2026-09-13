@@ -36,6 +36,10 @@ h2 { margin: 0; font-size: 1.65rem; letter-spacing: -.025em; }
 p { margin-top: 0; }
 .hero { display: grid; grid-template-columns: 1fr 350px; align-items: center; gap: 100px; min-height: 570px; border-bottom: 1px solid var(--rule); }
 .hero-intro { max-width: 390px; margin: 31px 0 27px; color: var(--ink-soft); font-size: 1.04rem; }
+.hero-social-links { display: flex; gap: 15px; margin: 0 0 24px; }
+.hero-social-links a { color: var(--sage-deep); text-decoration: none; transition: color .2s, transform .2s; }
+.hero-social-links a:hover { color: var(--accent); transform: translateY(-2px); }
+.hero-social-links .social-icon { width: 21px; height: 21px; }
 .text-link { display: inline-flex; align-items: center; gap: 10px; color: var(--sage-deep); border: 0; border-bottom: 1px solid currentColor; background: none; padding: 0 0 3px; font-size: .79rem; text-decoration: none; cursor: pointer; transition: gap .2s, color .2s; }
 .text-link:hover { color: var(--accent); gap: 15px; }
 .hero-portrait { position: relative; width: min(100%, 350px); aspect-ratio: 3 / 4; background: var(--paper-deep); }
@@ -95,7 +99,8 @@ p { margin-top: 0; }
 .project-card:last-child { border-bottom: 1px solid var(--rule); }
 .project-number { color: var(--accent); font: .68rem var(--mono); }
 .project-art { position: relative; display: flex; align-items: center; justify-content: center; min-height: 190px; overflow: hidden; color: var(--ink); font: 500 1rem var(--mono); text-transform: uppercase; }
-.project-art img { display: block; width: 100%; height: 100%; min-height: 190px; object-fit: cover; }
+.project-art img { display: block; width: 100%; height: 100%; min-height: 190px; object-fit: cover; filter: grayscale(1) saturate(.35); transition: filter .35s ease, transform .35s ease; }
+.project-art:hover img, .project-art:focus-within img { filter: grayscale(0) saturate(1); transform: scale(1.025); }
 .project-card[hidden] { display: none; }
 .project-art::after { content: "image slot"; position: absolute; right: 10px; bottom: 8px; color: var(--sage-deep); font: .55rem var(--mono); letter-spacing: .05em; opacity: .7; text-transform: uppercase; }
 .project-art.has-image::after { display: none; }
