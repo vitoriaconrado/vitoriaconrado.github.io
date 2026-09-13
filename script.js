@@ -103,12 +103,4 @@ dialog.addEventListener("click", (event) => {
   if (event.target === dialog) dialog.close();
 });
 
-document.querySelectorAll("[data-ready-image]").forEach((image) => {
-  const candidate = new Image();
-  candidate.onload = () => {
-    image.src = image.dataset.readyImage;
-  };
-  candidate.src = image.dataset.readyImage;
-});
-
 route();
