@@ -7,9 +7,9 @@ const statusTitle = document.querySelector("#current-status-title");
 const statusDescription = document.querySelector("#current-status-description");
 const statusControls = [...document.querySelectorAll(".status-control")];
 const currentUpdates = [
-  ["Mapping Brazil's alternative-protein startups", "Cleaning the dataset, checking sources, and turning the map into a more useful research tool."],
-  ["Taking the first steps in a new research question", "Reading, collecting references, and looking for the shape of a question worth staying with."],
-  ["Building the research archive", "Organizing notes, code, and public outputs so the work is easier to follow as it grows."],
+  ["Updating this site", "That's right, this one!"],
+  ["Solving some poster stuff for the II Cell Ag Congress", "Figuring out how illustrations for such legislation-heavy work & actual good practices for poster-making."],
+  ["Updating my Notion archive", "Organizing notes, code, and boilerplates."],
 ];
 
 let currentStatusIndex = 0;
