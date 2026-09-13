@@ -44,8 +44,8 @@ document.querySelectorAll(".filter").forEach((filter) => {
 const projectDetails = {
   map: ["Research · 2024", "Brazil’s bio-startup map", "An evolving visual index of companies working with biology, health, and the environment across Brazil.", "projects/startups_map.html", "Open interactive map ↗"],
   "field-guide": ["Web experiment · 2024", "A field guide to noticing", "A quiet digital notebook for collecting observations, textures, and questions from everyday walks.", "#", "Project notes coming soon ↗"],
+  repository: ["Data repository · 2026", "Reproducible materials for the study of cultivated meat regulation (Brazil)", "Open repository containing reproducible materials for the systematic mapping of scientific literature and official documents regarding the regulation of cultivated meat in Brazil. Includes screening records, R analysis, and PRISMA methodology documentation.", "https://github.com/vitoriaconrado/cultivated-meat-brazil-review", "Open GitHub repository ↗"],
   cells: ["Writings · ongoing", "Notes on biology and risk", "Short essays and working notes on public health, biosecurity, technology, and AI.", "#", "Writing archive coming soon ↗"],
-  web: ["Web · ongoing", "A field guide to noticing", "A quiet digital notebook for collecting observations, textures, and questions from everyday walks.", "#", "Project notes coming soon ↗"],
 };
 
 document.querySelectorAll(".project-open").forEach((button) => {
