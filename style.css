@@ -105,10 +105,15 @@ p { margin-top: 0; }
 .research-item h2 { margin: 0 0 12px; font-size: 1.8rem; }
 .research-item > p:not(.research-status) { max-width: 560px; color: var(--ink-soft); }
 .research-item .text-link { margin-top: 5px; }
+.research-meta { display: grid; gap: 10px; margin: 0; }
+.research-meta div { display: grid; grid-template-columns: 78px 1fr; gap: 14px; }
+.research-meta dt { color: var(--ink-soft); font: .6rem var(--mono); text-transform: uppercase; }
+.research-meta dd { margin: 0; font-size: .82rem; }
 .upcoming-publications { position: relative; margin-top: 8px; padding: 30px 24px 55px; border: 1px solid rgba(95,123,90,.35); background: rgba(95,123,90,.07); }
 .upcoming-publications::before { content: ""; position: absolute; top: -1px; left: -1px; width: 7px; height: calc(100% + 2px); background: var(--accent); }
 .upcoming-publications .group-label { padding-left: 14px; }
 .upcoming-publications .eyebrow { color: var(--accent); }
+.upcoming-heading { margin: 0; }
 .upcoming-marker { display: inline-block; margin-right: 7px; padding: 4px 7px; border-radius: 2px; background: var(--accent); color: var(--paper); font-size: .58rem; letter-spacing: .04em; text-transform: uppercase; }
 .upcoming-publications .research-items { border-top-color: rgba(95,123,90,.35); }
 .upcoming-publications .research-item { padding: 25px 14px; border-bottom-color: rgba(95,123,90,.35); }
