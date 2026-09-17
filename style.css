@@ -114,6 +114,9 @@ p { margin-top: 0; }
 .empty-research p { margin: 0; color: var(--ink-soft); font-size: .85rem; }
 .talks-writing-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .talks-writing-card { display: flex; min-height: 290px; flex-direction: column; align-items: flex-start; padding: 20px 0; border-top: 1px solid var(--rule); }
+.talks-writing-image-slot { width: 100%; margin: 0 0 22px; }
+.talks-writing-image-slot img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); filter: grayscale(.25); }
+.talks-writing-image-slot figcaption { margin-top: 8px; color: var(--ink-soft); font: .6rem var(--mono); }
 .talks-writing-card h2 { margin: 0 0 20px; font-size: 1.7rem; }
 .talks-writing-card > p:not(.note-date) { margin-bottom: 20px; color: var(--ink-soft); }
 .talks-writing-card .text-link { margin-top: auto; }
