@@ -105,6 +105,15 @@ p { margin-top: 0; }
 .research-item h2 { margin: 0 0 12px; font-size: 1.8rem; }
 .research-item > p:not(.research-status) { max-width: 560px; color: var(--ink-soft); }
 .research-item .text-link { margin-top: 5px; }
+.upcoming-publications { position: relative; margin-top: 8px; padding: 30px 24px 55px; border: 1px solid rgba(95,123,90,.35); background: rgba(95,123,90,.07); }
+.upcoming-publications::before { content: ""; position: absolute; top: -1px; left: -1px; width: 7px; height: calc(100% + 2px); background: var(--accent); }
+.upcoming-publications .group-label { padding-left: 14px; }
+.upcoming-publications .eyebrow { color: var(--accent); }
+.upcoming-marker { display: inline-block; margin-right: 7px; padding: 4px 7px; border-radius: 2px; background: var(--accent); color: var(--paper); font-size: .58rem; letter-spacing: .04em; text-transform: uppercase; }
+.upcoming-publications .research-items { border-top-color: rgba(95,123,90,.35); }
+.upcoming-publications .research-item { padding: 25px 14px; border-bottom-color: rgba(95,123,90,.35); }
+.upcoming-icon { color: var(--accent); font: 1.2rem var(--mono); }
+.upcoming-publications .research-status { color: var(--accent); }
 .research-image-slot { width: 100%; margin: 25px 0 0; }
 .research-image-slot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); }
 .research-image-slot figcaption { margin-top: 8px; color: var(--ink-soft); font: .62rem var(--mono); }
@@ -186,6 +195,8 @@ p { margin-top: 0; }
   .talks-writing-gallery { grid-template-columns: 1fr; gap: 0; }
   .talks-writing-card { min-height: 230px; }
   .talks-writing-image-slot { max-width: 125px; }
+  .upcoming-publications { padding: 24px 16px 40px 20px; }
+  .upcoming-publications .group-label { padding-left: 8px; }
   .values-list { gap: 20px; }
   .language-entry { grid-template-columns: 1fr; gap: 8px; }
   .language-skills { gap: 8px 10px; }
