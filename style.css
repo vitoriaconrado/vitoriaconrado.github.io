@@ -114,6 +114,11 @@ p { margin-top: 0; }
 .upcoming-publications .research-item { padding: 25px 14px; border-bottom-color: rgba(95,123,90,.35); }
 .upcoming-icon { color: var(--accent); font: 1.2rem var(--mono); }
 .upcoming-publications .research-status { color: var(--accent); }
+.research-meta { display: grid; gap: 10px; max-width: 560px; margin: 24px 0 0; }
+.research-meta div { display: grid; grid-template-columns: 90px 1fr; gap: 18px; padding-top: 10px; border-top: 1px solid rgba(95,123,90,.25); }
+.research-meta dt { color: var(--accent); font: .62rem var(--mono); text-transform: uppercase; }
+.research-meta dd { margin: 0; color: var(--ink-soft); font-size: .82rem; }
+.upcoming-publications .research-item:last-child h2 { max-width: 560px; font-size: 1.5rem; }
 .research-image-slot { width: 100%; margin: 25px 0 0; }
 .research-image-slot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); }
 .research-image-slot figcaption { margin-top: 8px; color: var(--ink-soft); font: .62rem var(--mono); }
@@ -197,6 +202,7 @@ p { margin-top: 0; }
   .talks-writing-image-slot { max-width: 125px; }
   .upcoming-publications { padding: 24px 16px 40px 20px; }
   .upcoming-publications .group-label { padding-left: 8px; }
+  .research-meta div { grid-template-columns: 1fr; gap: 4px; }
   .values-list { gap: 20px; }
   .language-entry { grid-template-columns: 1fr; gap: 8px; }
   .language-skills { gap: 8px 10px; }
