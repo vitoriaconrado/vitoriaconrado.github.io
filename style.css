@@ -123,7 +123,8 @@ p { margin-top: 0; }
 .research-meta dd { margin: 0; color: var(--ink-soft); font-size: .82rem; }
 .upcoming-publications .research-item:last-child h2 { max-width: 560px; font-size: 1.5rem; }
 .research-image-slot { width: 100%; margin: 25px 0 0; }
-.research-image-slot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); }
+.research-image-slot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--rule); background: var(--paper-deep); filter: grayscale(1); transition: filter .3s ease, transform .3s ease; }
+.research-image-slot img:hover, .research-image-slot img:focus-visible { filter: grayscale(0); transform: scale(1.015); }
 .research-image-slot figcaption { margin-top: 8px; color: var(--ink-soft); font: .62rem var(--mono); }
 .research-image-slot code { color: var(--sage-deep); }
 .empty-research { display: grid; grid-template-columns: 35px 1fr; gap: 15px; }
